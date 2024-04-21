@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build and Test') {
             steps {
-                sh 'mvn clean install' // Replace with your build and test command (e.g., npm test, gradle test)
+                sh 'gradle test' // Replace with your build and test command (e.g., npm test, gradle test)
             }
         }
         stage('OWASP Dependency Check') {
