@@ -10,7 +10,6 @@ pipeline {
                 }
             }
         }
-        
     stages {
         stage('Deploy To Kubernetes') {
             steps {
